@@ -106,15 +106,7 @@ div {
     display: inline-block;
     vertical-align: middle;
     margin-top: 30px;
-}
-
-.tempo-acabou {
-    text-align: center;
-    display: inline-block;
-    color: white;
-    margin: 0 5px;
-    font-size: 18px;
-    vertical-align: middle;
+    margin-right: 3px;
 }
 
 .section-2 {
@@ -125,7 +117,7 @@ div {
     height: 200px;
     display: inline-block;
     vertical-align: middle;
-    margin-left: 128px;
+    margin-left: 132px;
     margin-top: 30px;
 }
 

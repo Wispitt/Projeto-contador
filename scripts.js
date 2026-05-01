@@ -38,14 +38,14 @@ myButtonRight.addEventListener("click", () => {
 
         if (contador === 0) {
             clearInterval(contadorCrescente);
-            document.querySelector(".section-2").style.marginLeft = "0";
-            myParagraphTermino.textContent = "Tempo finalizado!";
+            myButtonRight.style.marginTop = "0";
+            erroRight.textContent = "Tempo finalizado!";
             setTimeout(() => {
                 const result = myInputRight.value + "s";
                 addHistoryItem(historyRight, result);
                 contador2.textContent = "0s";
-                myParagraphTermino.textContent = "";
-                document.querySelector(".section-2").style.marginLeft = "128px";
+                erroRight.textContent = "";
+                myButtonRight.style.marginTop = "5px";
                 myInputRight.value = "";
             }, 2000);
         }
@@ -78,14 +78,14 @@ myButtonLeft.addEventListener("click", () => {
 
         if (contador === alvo) {
             clearInterval(contadorDecrescente);
-            document.querySelector(".section-2").style.marginLeft = "0";
-            myParagraphTermino.textContent = "Tempo finalizado!";
+            myButtonLeft.style.marginTop = "0";
+            erroLeft.textContent = "Tempo finalizado!";
             setTimeout(() => {
                 const result = myInputLeft.value + "s";
                 addHistoryItem(historyLeft, result);
                 contador1.textContent = "0s";
-                myParagraphTermino.textContent = "";
-                document.querySelector(".section-2").style.marginLeft = "128px";
+                erroLeft.textContent = "";
+                myButtonLeft.style.marginTop = "5px";
                 myInputLeft.value = "";
             }, 2000);
         }
